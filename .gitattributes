@@ -1,11 +1,7 @@
-# Force GitHub to count Dart as the main language
+# Force GitHub Linguist to detect Dart
 *.dart linguist-detectable=true
 *.cpp linguist-detectable=false
 *.h linguist-detectable=false
 *.md linguist-detectable=false
 CMakeLists.txt linguist-detectable=false
 *.cmake linguist-detectable=false
-
-# Optional: ignore auto-generated Flutter files
-*.g.dart linguist-generated
-*.freezed.dart linguist-generated
