@@ -1,7 +1,5 @@
-# Force GitHub Linguist to detect Dart
+# Ignore everything except Dart
+* linguist-detectable=false
+
+# Explicitly mark Dart files as detectable
 *.dart linguist-detectable=true
-*.cpp linguist-detectable=false
-*.h linguist-detectable=false
-*.md linguist-detectable=false
-CMakeLists.txt linguist-detectable=false
-*.cmake linguist-detectable=false
