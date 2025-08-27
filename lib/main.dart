@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:play_ground/home.dart';
+import 'package:play_ground/user.dart';
 
-final nameProvider=StateProvider<String?>((ref)=>null);
+final userProvider=StateNotifierProvider<userNotifier,User>((ref)=>userNotifier(User(name: "", age: 0)));
 void main() {
   print("Hello from Dart 🚀");
   runApp(ProviderScope(child: const MainApp()));
@@ -14,7 +15,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Home()
+      home: MainApp()
     );
   }
 }

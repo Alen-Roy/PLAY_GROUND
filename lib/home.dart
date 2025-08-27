@@ -11,7 +11,7 @@ class Home extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref ) {
-    final user=ref.watch(userProvider) as User;
+    final user=ref.watch(userProvider);
     return Scaffold(
       appBar: AppBar(
         title: Text(user.name),

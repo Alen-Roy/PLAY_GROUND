@@ -7,22 +7,24 @@ environment:
   sdk: ^3.8.1
 
 dependencies:
-  build_runner: ^2.7.0
-  custom_lint: ^0.8.0
-  dev: ^1.0.0
   flutter:
     sdk: flutter
   flutter_riverpod: ^2.6.1
-  freezed: ^3.0.0-0.0.dev
   freezed_annotation: ^3.1.0
   json_annotation: ^4.9.0
-  json_serializable: ^6.11.0
   riverpod_annotation: ^2.6.1
 
 dev_dependencies:
+  freezed: ^3.0.0
+  build_runner: ^2.4.9       # ✅ compatible version
+  json_serializable: ^6.7.1  # ✅ compatible with source_gen 2.x
+  riverpod_generator: ^2.6.5
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+
+
+
 
 flutter:
   uses-material-design: true
