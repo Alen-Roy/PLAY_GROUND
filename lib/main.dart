@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:play_ground/home.dart';
 
-final providerName=Provider<String>((ref)=>"Alen");
+final nameProvider=StateProvider<String?>((ref)=>null);
 void main() {
   print("Hello from Dart 🚀");
   runApp(ProviderScope(child: const MainApp()));
