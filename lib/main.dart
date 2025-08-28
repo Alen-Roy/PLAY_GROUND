@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:play_ground/home.dart';
+import 'package:play_ground/ui/screens/todo_list.screen.dart';
 import 'package:play_ground/user.dart';
 
 final userProvider=StateNotifierProvider<userNotifier,User>((ref)=>userNotifier(User(name: "", age: 0)));
@@ -15,7 +16,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MainApp()
+      debugShowCheckedModeBanner: false,
+      home: TodoListScreen()
     );
   }
 }
